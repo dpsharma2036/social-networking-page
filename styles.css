@@ -1,167 +1,187 @@
-
 *{
     box-sizing: border-box;
+    
 }
-
-
-.container {
+body{
+    background-color:thistle;
+    position: relative;
+}
+#contain{
+    background-color: rgb(99, 204, 218);
+    margin:0 auto;
     width: 850px;
-    height: 450px;
-    margin: 0 auto;
-    background-color: rgb(127, 127, 133);
-    position: relative;
-    font-family: 'Noto Serif', serif;
-    color:white;
-    font-size: 40px;
-    
-
-    
+    height: 350px;
+    border: 1px solid black;
 }
-
-.div1 {
-    width: 200px;
-    height: 250px;
+#face{
+    background-color: rgb(206, 206, 214);
+    width: 100px;
+    height: 100px;
     position: relative;
-    top: 135px;
-    left: 15px;
-    
-    background-image: url(https://cdn.shopify.com/s/files/1/2123/8425/products/119268795-LRG_530x.jpg?v=1581614790);
-    border-radius: 5px;
+    top: 240px;
+    left: 10px;
+    border: 3px solid black;
+    z-index: 1;
 }
-.div2 {
+#line{
+    background-color: white;
     width: 850px;
-    height: 75px;
-    background-color: rgb(219, 216, 212);
+    height: 60px;
     position: relative;
-    top: 90px;
+    
+    top: 187px;
+    left: -1px;
+}
+h4{
+    position: absolute;
+    top: 245px;
+    left: 415px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav{
+    float: right;
+}
+#bar{
+border: solid white;
+    position: relative;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  top: -47px;
+  left: -520px;
+  z-index: 1;
+  border-radius: 1px;
+
+}
+.some{
+    display:inline;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-style: bold;
+}
+.some:hover{
+background-color: blue;
+
+}
+.some:active{
+    background-color: white;
+}
+header a{
+    text-decoration: none;
+    color: black; 
+}
+
+.column{
+    background-color: blue;
+    height: 400px;
+    width: 328px;
+    position: absolute;
+    margin-left: 287px;
+    border: 1px solid black;
+    top: 345px;
     z-index: -1;
-    border-radius: 2px;
-    border: box;
-}
-
-
-.div3 {
-    height: 41px;
-    width: 67px;
-    position: relative;
-    top: -40px;
-    left: 490px;
-    background-color:white;
-    text-align: center;
-    font-size: 22px;
-    color: blue;
-    background-image: url("https://www.pinpng.com/pngs/m/5-58274_free-icons-png-blue-thumbs-up-icon-transparent.png")height="25px" width="25px";
-    border-radius: 2px;
-}
-.div4 {
-    height: 41px;
-    width: 81px;
-    position: relative;
-    top: -81px;
-    left: 567px;
-    background-color:white;
-    text-align:center;
-    font-size: 22px;
-    color: blue;
-    border-radius: 2px;
-}
-
-
-.div5 {
-    height: 41px;
-    width: 110px;
-    position: relative;
-    top: -122px;
-    left: 650px;
-    background-color:white;
-    text-align: center;
-    font-size: 22px;
-    color: blue;
-    border-radius: 2px;
-}
-
-.div6 {
-    height: 41px;
-    width: 45px;
-    position: relative;
-    top: -163px;
-    left: 762px;
-    background-color:white;
-    text-align: center;
-    font-size: 22px;
-    color: blue;
-    border-radius: 2px;
-}
-.div7 {
-    height: 41px;
-    width: 81px;
-    position: relative;
-    top: -129px;
-    left: 250px;
-   
-    text-align: center;
-    font-size: 22px;
-    color: blue;
-    z-index: 1;
     
-
 }
-.div8 {
-    height: 41px;
-    width: 81px;
+.column::after{
+    content: " ";
+    position: absolute;
+    background-color: tan;
+    height: 395px;
+    width: 512px;
+    margin-left: 332px;
+    padding: -10px;
+    border-spacing: 10px;
+    border: 1px solid black;
+}
+#left{
+    background-color:beige;
+    height: 150px;
+    width: 150px;
+    left: 288px;
+    top: 241px;
     position: relative;
-    top: -170px;
-    left: 332px;
-   
-    text-align: center;
-    font-size: 22px;
-    color: blue;
     z-index: 1;
+    border: 1px solid peru;
 }
 
-
-
-.div9 {
-height: 41px;
-width: 81px;
-position: relative;
-top: -211px;
-left: 414px;
-
-text-align: center;
-font-size: 22px;
-color: blue;
-z-index: 1;
-}
-
-
-.div10 {
-    height: 41px;
-    width: 81px;
-    position: relative;
-    top: -252px;
-    left: 499px;
-   
-    text-align: center;
-    font-size: 22px;
-    color: blue;
+#left::after{
+    content: " ";
+    background-color: white;
+    height: 150px;
+    width: 150px;
+    margin-left: 697px;
+    top: -80px;
+    position: absolute;
     z-index: 1;
+    border: 1px solid peru;
 }
-
-
-
-
-.div11 select{
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-height:41px;
-width: 81px;
-color:blue;
-    background-color:rgb(219, 216, 212);;
-text-align: center;
-font-size: 22px;
-top:-303px;
-left:578px;
-position: relative;
-}
+.one{
+    border: 1px solid white;
+     padding-left: 10px;
+    background-color:white;
+    border-radius: 2px;
+    position: absolute;
+    margin-left: -200px;
+    top: 230px;
+    font-weight: 800;
+    font-family: sans-serif;
+  }
+  .one img{
+      width: 15px;
+  }
+  .two{
+      border: 1px solid white;
+      padding-left: 10px;
+     background-color:white;
+     border-radius: 1px;
+     position: absolute;
+     margin-left: -130px;
+     top: 230px;
+     font-weight: 800;
+     font-family: sans-serif;
+  
+  }
+  .two img{
+      width: 15px;
+     
+  }
+  .three{
+      border: 1px solid white;
+      padding-left: 10px;
+     background-color:white;
+     border-radius: 1px;
+     position: absolute;
+     margin-left: -40px;
+     top: 230px;
+     font-weight: 800;
+     font-family: sans-serif;
+  
+  }
+  
+  .three img{
+      width: 15px;
+  
+  }
+  .four{
+      border: 1px solid white;
+      padding-left: 10px;
+     background-color:white;
+     border-radius: 1px;
+     position: absolute;
+     margin-left: 71px;
+     top: 230px;
+     font-weight: 800;
+     font-family: sans-serif;
+     
+  }
+  .four img{
+      width: 15px;
+      margin-left: 12px;
+      
+  }
+  footer{
+    position: absolute;
+    top: 750px;
+  } 
